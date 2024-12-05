@@ -41,6 +41,11 @@ def main():
             if a.is_colliding(player):
                 print("Game Over")
                 sys.exit()
+            for s in shot_group:
+                if s.is_colliding(a):
+                    s.kill()
+                    a.kill()
+
 
 
         # render
