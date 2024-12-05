@@ -44,7 +44,7 @@ def main():
             for s in shot_group:
                 if s.is_colliding(a):
                     s.kill()
-                    a.kill()
+                    a.split()
 
 
 
